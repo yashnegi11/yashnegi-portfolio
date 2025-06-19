@@ -1,106 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Yash Pal Singh Negi | AI/ML Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollreveal/4.0.9/scrollreveal.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://unpkg.com/lottie-web@5.7.13/build/player/lottie.min.js"></script>
+  <script>
+    // Dark mode toggle
+    function toggleDarkMode() {
+      document.documentElement.classList.toggle('dark');
+    }
+  </script>
   <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      scroll-behavior: smooth;
+    .dark {
+      background-color: #1a202c;
+      color: #e2e8f0;
     }
   </style>
 </head>
-<body class="bg-gray-900 text-white">
-  <header class="bg-gray-800 sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-      <h1 class="text-2xl font-bold">Yash Negi</h1>
-      <nav class="space-x-6">
-        <a href="#about" class="hover:text-teal-400">About</a>
-        <a href="#projects" class="hover:text-teal-400">Projects</a>
-        <a href="#skills" class="hover:text-teal-400">Skills</a>
-        <a href="#contact" class="hover:text-teal-400">Contact</a>
-      </nav>
+
+<body class="font-sans p-6">
+  <!-- Header -->
+  <header class="flex items-center justify-between mb-6">
+    <div>
+      <h1 class="text-3xl font-bold">Yash Pal Singh Negi</h1>
+      <p class="text-gray-600">Machine Learning Engineer | NLP & LLM Enthusiast | Data-Driven Problem Solver</p>
+    </div>
+    <div>
+      <button onclick="toggleDarkMode()" class="bg-gray-200 px-4 py-2 rounded shadow">Toggle Dark Mode</button>
     </div>
   </header>
 
-  <section class="text-center py-16 px-4">
-    <h2 class="text-4xl font-bold mb-4">Hi, I'm Yash 👋</h2>
-    <p class="text-lg max-w-xl mx-auto">Machine Learning Engineer & LLM Enthusiast passionate about solving real-world problems using AI and data-driven systems.</p>
-    <div class="flex justify-center mt-8">
-      <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_zrqthn6o.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
-    </div>
+  <!-- About Me -->
+  <section class="mb-8">
+    <h2 class="text-2xl font-semibold mb-2">About Me</h2>
+    <p>I specialize in developing intelligent solutions using Machine Learning and Natural Language Processing. I'm passionate about solving real-world problems and building impactful systems through LLMs, LangChain, and data-centric AI.</p>
   </section>
 
-  <section id="about" class="py-16 px-4 max-w-4xl mx-auto">
-    <h2 class="text-3xl font-semibold mb-6 text-teal-400">About Me</h2>
-    <p class="text-lg leading-relaxed">Based in Kashipur, Uttarakhand, I'm an AI enthusiast who transitioned from engineering into the world of machine learning and NLP. I specialize in building impactful, scalable AI applications using LangChain, Streamlit, and scikit-learn. I've interned at Utilitarian Labs as a Salesforce Developer and led a project at Maruti Suzuki's Manesar Plant. My core belief is that self-learning and curiosity can drive real innovation.</p>
+  <!-- What I'm Looking For -->
+  <section class="mb-8">
+    <h2 class="text-2xl font-semibold mb-2">What I’m Looking For</h2>
+    <p>Seeking ML/NLP internship or entry-level role to apply my skills in real-time systems and grow with an innovative, fast-paced team.</p>
   </section>
 
-  <section id="projects" class="py-16 px-4 bg-gray-800">
-    <h2 class="text-3xl font-semibold mb-10 text-teal-400 text-center">Projects</h2>
-    <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-      <div class="bg-gray-700 p-6 rounded-xl shadow-lg hover:scale-105 transition-all">
-        <h3 class="text-xl font-bold mb-2">GDP Growth Prediction</h3>
-        <p class="text-sm mb-4">Interactive ML model dashboard using World Bank data. R² = 0.96 using Gradient Boosting.</p>
-        <a href="https://gdp-growth-prediction-6krnqus8qvujykbiebatrj.streamlit.app/" class="text-teal-400 mr-4" target="_blank">Live</a>
-        <a href="https://github.com/yashnegi11/GDP-growth-prediction" class="text-teal-400" target="_blank">Code</a>
-      </div>
-      <div class="bg-gray-700 p-6 rounded-xl shadow-lg hover:scale-105 transition-all">
-        <h3 class="text-xl font-bold mb-2">RAG-Based Chatbot</h3>
-        <p class="text-sm mb-4">LangChain + FAISS powered document Q&A with Streamlit UI and OpenRouter LLMs.</p>
-        <a href="https://ragchatbot.streamlit.app" class="text-teal-400 mr-4" target="_blank">Live</a>
-        <a href="https://github.com/yashnegi11/rag-chatbot" class="text-teal-400" target="_blank">Code</a>
-      </div>
-      <div class="bg-gray-700 p-6 rounded-xl shadow-lg hover:scale-105 transition-all">
-        <h3 class="text-xl font-bold mb-2">TalentScout Interview Chatbot</h3>
-        <p class="text-sm mb-4">AI chatbot for generating tech questions and storing structured responses for recruiters.</p>
-        <a href="https://talentscout-chat.streamlit.app" class="text-teal-400 mr-4" target="_blank">Live</a>
-        <a href="https://github.com/yashnegi11/talentscout_chatbot" class="text-teal-400" target="_blank">Code</a>
-      </div>
-      <div class="bg-gray-700 p-6 rounded-xl shadow-lg hover:scale-105 transition-all">
-        <h3 class="text-xl font-bold mb-2">Yoga Balance Web App</h3>
-        <p class="text-sm mb-4">Responsive React web app with reusable components for a client’s wellness brand.</p>
-        <a href="https://yoga-balance.vercel.app" class="text-teal-400 mr-4" target="_blank">Live</a>
-        <a href="https://github.com/yashnegi11/yoga-balance" class="text-teal-400" target="_blank">Code</a>
-      </div>
-    </div>
+  <!-- Projects -->
+  <section class="mb-8">
+    <h2 class="text-2xl font-semibold mb-4">Key Projects</h2>
+    <ul class="space-y-4">
+      <li>
+        <strong>GDP Growth Prediction:</strong> Streamlit app to forecast GDP using World Bank data (R² = 0.96). [<a href="#">Live</a>] [<a href="#">GitHub</a>]
+      </li>
+      <li>
+        <strong>RAG Chatbot:</strong> LangChain + FAISS + Streamlit powered document Q&A tool. [<a href="#">Live</a>] [<a href="#">GitHub</a>]
+      </li>
+      <li>
+        <strong>TalentScout AI Chatbot:</strong> LLM-driven Streamlit recruiter bot. [<a href="#">Live</a>] [<a href="#">GitHub</a>]
+      </li>
+      <li>
+        <strong>Diamond Price Prediction:</strong> ML model with XGBoost on Kaggle dataset. RMSE: 536.91, R² = 0.982.
+      </li>
+    </ul>
   </section>
 
-  <section id="skills" class="py-16 px-4 max-w-5xl mx-auto">
-    <h2 class="text-3xl font-semibold mb-6 text-teal-400">Skills</h2>
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center text-sm">
-      <div class="bg-gray-800 py-3 rounded">Python</div>
-      <div class="bg-gray-800 py-3 rounded">LangChain</div>
-      <div class="bg-gray-800 py-3 rounded">HuggingFace</div>
-      <div class="bg-gray-800 py-3 rounded">Streamlit</div>
-      <div class="bg-gray-800 py-3 rounded">XGBoost</div>
-      <div class="bg-gray-800 py-3 rounded">scikit-learn</div>
-      <div class="bg-gray-800 py-3 rounded">TensorFlow</div>
-      <div class="bg-gray-800 py-3 rounded">ReactJS</div>
-    </div>
+  <!-- Skills Chart -->
+  <section class="mb-8">
+    <h2 class="text-2xl font-semibold mb-2">Skill Radar</h2>
+    <canvas id="skillsChart" width="400" height="300"></canvas>
   </section>
-
-  <section id="contact" class="py-16 px-4 bg-gray-800 text-center">
-    <h2 class="text-3xl font-semibold text-teal-400 mb-4">Let's Connect</h2>
-    <p class="mb-6">Reach out to discuss collaborations, ideas, or just say hello!</p>
-    <div class="flex justify-center gap-6">
-      <a href="mailto:yashnegiuk02@gmail.com" class="text-teal-400">Email</a>
-      <a href="https://www.linkedin.com/in/yashnegi69" target="_blank" class="text-teal-400">LinkedIn</a>
-      <a href="https://github.com/yashnegi11" target="_blank" class="text-teal-400">GitHub</a>
-    </div>
-  </section>
-
-  <footer class="bg-gray-900 text-center py-6">
-    <p class="text-sm text-gray-500">© 2025 Yash Negi. All rights reserved.</p>
-  </footer>
 
   <script>
-    ScrollReveal().reveal('section', { delay: 200, duration: 800, reset: true, distance: '40px', origin: 'bottom' });
+    const ctx = document.getElementById('skillsChart').getContext('2d');
+    new Chart(ctx, {
+      type: 'radar',
+      data: {
+        labels: ['Python', 'ML', 'NLP', 'React', 'LangChain', 'Git'],
+        datasets: [{
+          label: 'Proficiency',
+          data: [9, 8, 8, 6, 7, 8],
+          backgroundColor: 'rgba(59,130,246,0.2)',
+          borderColor: '#3b82f6',
+        }]
+      },
+      options: {
+        scales: {
+          r: {
+            angleLines: { display: false },
+            suggestedMin: 0,
+            suggestedMax: 10
+          }
+        }
+      }
+    });
+  </script>
+
+  <!-- Contact and Resume -->
+  <section class="mb-8">
+    <h2 class="text-2xl font-semibold mb-2">Get in Touch</h2>
+    <p>Email: <a href="mailto:yashnegiuk02@gmail.com" class="text-blue-500">yashnegiuk02@gmail.com</a></p>
+    <p><a href="/resume.pdf" class="text-blue-500 underline">📄 Download My Resume</a></p>
+  </section>
+
+  <!-- Fun Facts and Blog -->
+  <section class="mb-8">
+    <h2 class="text-2xl font-semibold mb-2">Fun Facts & Blogs</h2>
+    <ul class="list-disc list-inside">
+      <li>Fun Fact: I once built a working chatbot in 48 hours using just open-source tools and Streamlit.</li>
+      <li>Blog: <em>What I Learned Building a RAG Chatbot</em> (Coming Soon)</li>
+    </ul>
+  </section>
+
+  <!-- 404 Page Redirect -->
+  <script>
+    if (window.location.pathname === '/404') {
+      document.body.innerHTML = '<div class="text-center mt-20"><h1 class="text-4xl font-bold">404 - Page Not Found</h1><p class="mt-4">But I'm not lost! Hire me 😄</p></div>';
+    }
   </script>
 </body>
+
 </html>
