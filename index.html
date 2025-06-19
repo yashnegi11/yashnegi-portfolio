@@ -7,7 +7,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollreveal/4.0.9/scrollreveal.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
   <style>
     body {
       font-family: 'Inter', sans-serif;
@@ -41,6 +41,7 @@
     <h2 class="text-3xl font-semibold mb-6 text-teal-400">About Me</h2>
     <p class="text-lg leading-relaxed">Based in Kashipur, Uttarakhand, I'm an AI enthusiast who transitioned from engineering into the world of machine learning and NLP. I specialize in building impactful, scalable AI applications using LangChain, Streamlit, and scikit-learn. I've interned at Utilitarian Labs as a Salesforce Developer and led a project at Maruti Suzuki's Manesar Plant. My core belief is that self-learning and curiosity can drive real innovation.</p>
     <a href="YashPalSinghNegi.pdf" download class="mt-4 inline-block bg-teal-500 hover:bg-teal-600 text-white font-semibold py-2 px-4 rounded transition">📄 Download Resume</a>
+    <a href="YashPalSinghNegi.pdf" target="_blank" class="ml-4 inline-block bg-gray-700 hover:bg-gray-600 text-white font-semibold py-2 px-4 rounded transition">👁️ View Resume</a>
   </section>
 
   <section class="py-16 px-4 bg-gray-900">
@@ -129,7 +130,7 @@
   </footer>
 
   <script>
-    ScrollReveal().reveal('section', { delay: 200, duration: 800, reset: true, distance: '40px', origin: 'bottom' });
+    ScrollReveal().reveal('section', {delay: 200,duration: 800,reset: true,distance: '40px',origin: 'bottom'});
     if (window.location.pathname === '/404') {
       document.body.innerHTML = '<div class="text-center mt-20"><h1 class="text-4xl font-bold">404 - Page Not Found</h1><p class="mt-4">This page doesn’t exist. But I do! Hire me 😊</p></div>';
     }
