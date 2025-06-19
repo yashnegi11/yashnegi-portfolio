@@ -1,153 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yash Pal Singh Negi | AI/ML Engineer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Inter', sans-serif;
-    }
-    body {
-      background-color: #f7f9fc;
-      color: #333;
-      line-height: 1.6;
-    }
-    header {
-      background-color: #1e293b;
-      color: #fff;
-      padding: 2rem;
-      text-align: center;
-    }
-    header h1 {
-      font-size: 2.5rem;
-    }
-    header p {
-      font-size: 1.2rem;
-      margin-top: 0.5rem;
-    }
-    .container {
-      max-width: 960px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-    section {
-      margin-bottom: 2.5rem;
-    }
-    h2 {
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
-      color: #0f172a;
-    }
-    .project {
-      background-color: #fff;
-      border-left: 4px solid #3b82f6;
-      padding: 1rem 1.5rem;
-      margin-bottom: 1.5rem;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-      border-radius: 6px;
-    }
-    .project h3 {
-      font-size: 1.2rem;
-      margin-bottom: 0.5rem;
-    }
-    .project a {
-      color: #2563eb;
-      text-decoration: none;
-    }
-    .skills ul {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      list-style: none;
-    }
-    .skills li {
-      background: #e0f2fe;
-      padding: 0.5rem 1rem;
-      border-radius: 20px;
-      font-weight: 500;
-      color: #0369a1;
-    }
-    footer {
-      text-align: center;
-      padding: 1.5rem;
-      background-color: #f1f5f9;
-      color: #64748b;
-      font-size: 0.9rem;
-    }
-    a.button {
-      display: inline-block;
-      margin-top: 0.5rem;
-      padding: 0.4rem 1rem;
-      background-color: #2563eb;
-      color: white;
-      border-radius: 4px;
-      text-decoration: none;
-      font-size: 0.9rem;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yash Negi | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: #ecf0f1;
+        }
+
+        nav {
+            text-align: center;
+            background-color: #34495e;
+            padding: 0.5rem;
+        }
+
+        nav a {
+            margin: 0 1rem;
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .section {
+            padding: 3rem 1rem;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+        }
+
+        .project-card {
+            background: white;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+            transition: transform 0.2s ease;
+        }
+
+        .project-card:hover {
+            transform: scale(1.01);
+        }
+
+        .project-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .btn-group a {
+            display: inline-block;
+            margin-right: 0.5rem;
+            margin-top: 0.75rem;
+            padding: 0.4rem 1rem;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            transition: background-color 0.2s;
+        }
+
+        .btn-group a:hover {
+            background-color: #2980b9;
+        }
+
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .skill {
+            background-color: #ecf0f1;
+            padding: 0.6rem 1rem;
+            border-radius: 20px;
+            font-size: 0.95rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            background-color: #2c3e50;
+            color: white;
+        }
+    </style>
 </head>
+
 <body>
-  <header>
-    <h1>Yash Pal Singh Negi</h1>
-    <p>Machine Learning Engineer | NLP & LLM Enthusiast</p>
-  </header>
+    <header>
+        <h1>Yash Pal Singh Negi</h1>
+        <p>Machine Learning Engineer | NLP & LLM Enthusiast | Data-Driven Problem Solver</p>
+    </header>
 
-  <div class="container">
-    <section>
-      <h2>About Me</h2>
-      <p>I’m passionate about solving real-world problems with AI. I’ve worked on projects ranging from GDP growth prediction to Retrieval-Augmented Generation (RAG) chatbots. I enjoy building intelligent systems that are simple, efficient, and impactful.</p>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+    </nav>
+
+    <section class="section" id="about">
+        <h2>About Me</h2>
+        <p>I’m a self-taught Machine Learning Engineer from Kashipur, Uttarakhand, with a passion for AI-driven solutions. My journey started from scratch—learning Python and ML from YouTube—and today, I’m building NLP and LLM-powered apps that solve real-world problems.</p>
     </section>
 
-    <section>
-      <h2>Projects</h2>
-      <div class="project">
-        <h3>GDP Growth Prediction <a href="#" class="button">Live</a> <a href="#" class="button">Code</a></h3>
-        <p>Achieved 0.96 R² using XGBoost on World Bank economic indicators. Built an interactive dashboard using Streamlit.</p>
-      </div>
-      <div class="project">
-        <h3>RAG Chatbot using LangChain <a href="#" class="button">Live</a> <a href="#" class="button">Code</a></h3>
-        <p>Created a document Q&A bot with LangChain, FAISS, and OpenRouter LLMs for real-time document understanding.</p>
-      </div>
-      <div class="project">
-        <h3>Technical Interview Chatbot <a href="#" class="button">Live</a> <a href="#" class="button">Code</a></h3>
-        <p>Built a Streamlit chatbot to dynamically generate and validate tech interview questions using OpenRouter APIs.</p>
-      </div>
-      <div class="project">
-        <h3>Diamond Price Prediction</h3>
-        <p>Designed ML pipeline with XGBoost, achieving R² of 0.98 and RMSE of 536.91 on a structured dataset.</p>
-      </div>
-      <div class="project">
-        <h3>Yoga Balance Web App <a href="#" class="button">Live</a> <a href="#" class="button">Code</a></h3>
-        <p>Created a responsive web application for a client using React.js and integrated reusable components for seamless UI.</p>
-      </div>
+    <section class="section" id="projects">
+        <h2>Projects</h2>
+
+        <div class="project-card">
+            <div class="project-title">GDP Growth Prediction</div>
+            <p>Used World Bank data to predict GDP growth with XGBoost (R² = 0.96). Built a Streamlit dashboard for country-wise analysis.</p>
+            <div class="btn-group">
+                <a href="https://gdp-growth-prediction-6krnqus8qvujykbiebatrj.streamlit.app/" target="_blank">Live</a>
+                <a href="https://github.com/yashnegi11/GDP-growth-prediction" target="_blank">Code</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-title">RAG Chatbot with LangChain</div>
+            <p>Built a document Q&A app using LangChain, FAISS, and OpenRouter. Supports PDF, TXT, and DOCX with semantic search and LLM responses.</p>
+            <div class="btn-group">
+                <a href="https://your-rag-app.streamlit.app" target="_blank">Live</a>
+                <a href="https://github.com/yashnegi11/rag-chatbot" target="_blank">Code</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-title">TalentScout – AI Interview Chatbot</div>
+            <p>Interactive chatbot that creates and validates technical interview questions based on user’s tech stack and stores responses in CSV.</p>
+            <div class="btn-group">
+                <a href="https://your-talentscout-app.streamlit.app" target="_blank">Live</a>
+                <a href="https://github.com/yashnegi11/talentscout_chatbot" target="_blank">Code</a>
+            </div>
+        </div>
     </section>
 
-    <section class="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li>Python</li>
-        <li>scikit-learn</li>
-        <li>LangChain</li>
-        <li>TensorFlow</li>
-        <li>React.js</li>
-        <li>HuggingFace</li>
-        <li>Streamlit</li>
-        <li>FAISS</li>
-        <li>XGBoost</li>
-        <li>Prompt Engineering</li>
-        <li>Git</li>
-        <li>Docker</li>
-      </ul>
+    <section class="section" id="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill">Python</div>
+            <div class="skill">LangChain</div>
+            <div class="skill">Scikit-learn</div>
+            <div class="skill">Streamlit</div>
+            <div class="skill">Pandas</div>
+            <div class="skill">HuggingFace</div>
+            <div class="skill">XGBoost</div>
+            <div class="skill">Git</div>
+            <div class="skill">ReactJS</div>
+            <div class="skill">MySQL</div>
+            <div class="skill">TensorFlow</div>
+            <div class="skill">OpenRouter API</div>
+        </div>
     </section>
-  </div>
 
-  <footer>
-    © 2025 Yash Pal Singh Negi · Kashipur, Uttarakhand · <a href="mailto:yashnegiuk02@gmail.com">yashnegiuk02@gmail.com</a>
-  </footer>
+    <footer>
+        <p>© 2025 Yash Pal Singh Negi • Built with ❤️ using GitHub Pages</p>
+    </footer>
 </body>
+
 </html>
